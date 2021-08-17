@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #2a2a2a;
+    font-family: 'Oswald', sans-serif;
+}
+ul {
+    list-style: none;
+    font-style: semi-bold;
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background: linear-gradient(90deg,#00c3ff,#ffff1c);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px #ffffcf;
+    margin-bottom: 50px;
+}
+
+header ul {
+    display: flex;
+
+}
+header ul li {
+    padding: 10px;
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: #ffffcf;
+    text-decoration: underline;
+}
+
+header div img {
+    width: 100px;
+}
+
+.container {
+    text-align: center;
+}
+.container .name h1 {
+    font-size: 30px;
+}
+.container .name h5 {
+    font-size: 15px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: grid !important;
+}
+
+p {
+     font-size: 15px;
+     max-width: 600px;
+     margin: 0 auto;
+}
+
+.grid1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: thick double #ffffcf;
+    margin-top: 30px;
+    display: grid; 
+    gap: 10px;
+    grid-template-areas: 
+        "item1 item1 item1"
+        "item2 item4 item3"
+        "item5 item6 ."
+        "item10 item7 item22"
+        "item8 item9 item23"
+        "item13 item11 item12"
+        "item14 item15 ."
+        "item16 item16 item16"
+        "item17 item18 item19"
+        ". . item20 "
+        "item21 item21 item21"
+    ; 
+
+}
+
+.grid1-1 {
+    grid-area: item1;
+}
+.grid1-1-1 {
+    grid-area: item2;
+}
+.grid1-1-2 {
+    grid-area: item3;
+}
+.grid1-1-3 {
+    grid-area: item4;
+}
+.grid1-1-4 {
+    grid-area: item5;   
+}
+.grid1-1-5 {
+    grid-area: item6;
+}
+.grid1-1-6 {
+    grid-area: item7;
+}
+.grid1-1-7 {
+    grid-area: item8;
+}
+.grid1-1-8 {
+    grid-area: item9;
+}
+.grid1-1-9 {
+    grid-area: item10;
+}
+.grid1-1-10 {
+    grid-area: item11;
+}
+.grid1-1-11 {
+    grid-area: item12;
+}
+.grid1-1-12 {
+    grid-area: item13;
+}
+.grid1-1-13 {
+    grid-area: item14;
+}
+.grid1-1-14 {
+    grid-area: item15;
+}
+.grid1-1-15 {
+    grid-area: item22;
+}
+.grid1-1-16 {
+    grid-area: item23;
+}
+.grid1-2 {
+    grid-area: item16;
+
+}
+.grid1-2-1 {
+    grid-area: item17;
+
+}
+.grid1-2-2 {
+    grid-area: item18;
+
+}
+.grid1-2-3 {
+    grid-area: item19;
+
+}
+.grid1-2-4 {
+    grid-area: item20;
+
+}
+.form {
+    grid-area: item21;
+}
+
+
+
+
+
+
+.form button {
+    width: 15%;
+    padding: 5px 5px;
+    background:linear-gradient(to right, #ffffcf 50%, #fab863 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #858383;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+.form button:hover{
+    background-position:left bottom;
+}
+@media only screen and(max-width:768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width:480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}

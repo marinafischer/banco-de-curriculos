@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title> JobsNet </title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="imagem/horizontal_on_white_by_logaster.png"/>
+            </div>
+            <ul>
+                <li>
+                    <a  href="https://facebook.com.br">
+                        <img src="imagem/facebook.png"/>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://linkedin.com.br"> 
+                        <img src="imagem/linkedin.png"/>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com.br"> 
+                        <img src="imagem/twitter.png"/>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="container">
+                <div class="name">
+                    <h1>JobsNet</h1>
+                    <h5>Somos especialista em recrutamento e seleção de profissionais nas mais diversas</h5>
+                    <p>Para se cadastrar é rápido e fácil! <br/>
+                        Preencha o formulário abaixo com suas informações e clique em enviar.<br/>
+                    </p>
+                </div>
+
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fas fa-arrow-alt-circle-down"></i>
+                </div>
+
+                <div style="display:none;" id="about" class="wrap">
+                    <form class="formulario">
+
+                    <div class="grid1">
+                        <h3 class="grid1-1">DADOS PESSOAS</h3>
+                        
+                        <p class="grid1-1-1">Nome Completo:* 
+                            <input type="text"  name="nome"  required/>
+                        </p>
+                    
+                        <p class="grid1-1-2">Cargo Pretendido: 
+                            <input type="text" name="cargo"/>
+                        </p>
+                        <p class="grid1-1-3">Data de Nascimento:* 
+                            <input type="date" value="dd/mm/aaaa" name="data-nascimento" required/>
+                        </p>
+                        <p class="grid1-1-4">Sexo:
+                            <select name="sexo">
+                                <option>Prefiro não Informar</option>
+                                <option>Feminino</option>
+                                <option>Masculino</option>
+                            </select>
+                        </p>
+                        <p class="grid1-1-5" >Estado Civil:
+                            <select name="estado-civil">
+                                <option>Solteirx</option>
+                                <option>Casadx/União Estável</option>
+                                <option>Viuvx</option>
+                            </select>
+                        </p>
+                        <p class="grid1-1-6">Endereço:*
+                            <input type="text" value="Nome da Rua" id="endereco" required/>
+                        </p>
+                        <p class="grid1-1-15">Número:*
+                            <input type="text" value="Numero e complemento" name="numero" required/>
+                        </p>
+                        <p class="grid1-1-7">Bairro:* 
+                            <input type="text" id="bairro" requires/>
+                        </p>
+                        <p class="grid1-1-8">Cidade:* 
+                            <input type="text" id="cidade" required/>
+                        </p>
+                        <p class="grid1-1-16">Estado:* 
+                            <input type="text" id="estado" required/>
+                        </p>
+                        <p class="grid1-1-9">Cep:* 
+                            <input type="number" id="cep" required/>
+                        </p>
+                        <p class="grid1-1-10">Telefone Fixo 1: 
+                            <input type="tel" name="fone1"/>
+                        </p>
+                        <p class="grid1-11">Telefone Fixo 2: 
+                            <input type="tel" name="fone2"/>
+                        </p>
+                        <p class="grid1-1-12">Celular:* 
+                            <input type="tel" name="celular" required/>
+                        </p>
+                        <p class="grid1-1-13">Contato: 
+                            <input type="text" name="contato"/>
+                        </p>
+                        <p class="grid1-1-14">E-mail:* 
+                            <input type="e-mail" name="email" required/>
+                        </p>
+
+                        <h3 class="grid1-2">DOCUMENTOS</h3>
+                        <p class="grid1-2-1">Identdade:* 
+                            <input type="number" name="identidade" required/>
+                        </p>
+                        <p class="grid1-2-2">CPF:* 
+                            <input type="number" name="cpf" required/>
+                        </p>
+                        <p class="grid1-2-3">Possui Veículo? 
+                            
+                            <label>
+                                Sim 
+                                <input type="radio" name="veiculo"/>
+                            </label>
+                            <label >
+                                Não
+                                <input type="radio" name="veiculo"/>
+                            </label>
+                        </p>
+                        <p class="grid1-2-4">Possui Carteira de Habilitação? 
+                            <label>
+                                Sim  
+                                <input type="radio" name="habilitacao">
+                            </label> 
+                            <label>
+                                Não 
+                                <input type="radio" name="habilitacao">
+                            </label>
+                        </p>
+                        <br/>
+                        <div class="form">
+                            <div>
+                                <h5>Finalizar e Enviar</h5>
+                            </div>
+                            <form actiom="">
+                                <button>enviar</button>
+                            </form>
+                        </div>
+                    </div>  
+
+                    </form>
+                </div> 
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
