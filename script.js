@@ -26,7 +26,7 @@ function displayAbout () {
 const pesquisarCep = async() => {
     limparFormulario();
     const cep = document.getElementById('cep').value;
-    const url = ` http://viacep.com.br/ws/${cep}/json/`;
+    const url = ` https://viacep.com.br/ws/${cep}/json/`;
     if (cep.length == 8) {
         const dados = await fetch(url);
         const endereco = await dados.json();
